@@ -14,7 +14,7 @@ Câu 4:
 Đếm được số thành phần liên thông của các pixel trắng trong tập dữ liệu đó. Sử dụng thuật toán dfs để tính số thành phần liên thông trong hàm cc. Sau khi tính được số thành phần liên thông ta sẽ thêm ra 3 feature đó là số thành phần lớn hơn 1, lớn hơn 3 và lớn hơn 5, các feature này dạng nhị phân
 
 Câu 5:
-Duyệt qua vòng lặp max_iterations và duyệt qua trainingData. Sau đó có Counter để chứa key là label và giá trị từng label đó. Ở vòng for label, tính độ chính xác bằng feature của label tại training thứ i nhân với weights. Tính argMax của y_hat thì thuật toán giống preceptron
+Duyệt qua vòng lặp max_iterations và duyệt qua trainingData. Sau đó tìm label có highest score, nếu label và cái actual label không giống nhau thì ta update lại weight
 
 Câu 6:
 Dựa vào đề bài, ta có các feature mới là con ma gần nhất ( nearest_ghost), num_ghost là đếm số ma( dùng cho né ma và lao vào ma), scared_ghost là đếm số ma scared( dùng cho né ma và lao vào ma), stop là xét xem action hiện tại có phải stop hay không, nearest_food là xác định khoảng cách đến food gần nhất( dùng cho thằng chỉ đi ăn thức ăn và né ma+ ăn thức ăn)
